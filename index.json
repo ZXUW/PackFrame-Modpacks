@@ -3,8 +3,8 @@
   "packs": [
     {
       "id": "baseuiandbeauty",
-      "name": "BaseUIandBeauty",
-      "summary": "BaseUIandBeauty 整合包",
+      "name": "UI+美化 [1.7]",
+      "summary": "UI+美化 [1.7] 整合包",
       "repo": "ZXUW/BaseUIandBeauty-RimworldPack",
       "ref": "main",
       "manifest": "pack.json",
