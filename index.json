@@ -3,12 +3,22 @@
   "packs": [
     {
       "id": "baseuiandbeauty",
-      "name": "UI+美化 [1.7]",
-      "summary": "UI+美化 [1.7] 整合包",
+      "name": "UI\u002B\u7F8E\u5316 [1.7]",
+      "summary": "UI\u002B\u7F8E\u5316 [1.7] \u6574\u5408\u5305",
       "repo": "ZXUW/BaseUIandBeauty-RimworldPack",
       "ref": "main",
       "manifest": "pack.json",
       "file": "https://raw.githubusercontent.com/ZXUW/BaseUIandBeauty-RimworldPack/main/pack.json",
+      "modCount": 83
+    },
+    {
+      "id": "ui-1-7",
+      "name": "UI\u002B\u7F8E\u5316 [1.7]",
+      "summary": "UI\u002B\u7F8E\u5316 [1.7]",
+      "repo": "ZXUW/UI-1.7-Rimworld-PackFrame",
+      "ref": "main",
+      "manifest": "pack.json",
+      "file": "https://raw.githubusercontent.com/ZXUW/UI-1.7-Rimworld-PackFrame/main/pack.json",
       "modCount": 83
     }
   ]
