@@ -1,52 +1,46 @@
 # PackFrame Modpacks
 
-PackFrame 的整合包索引仓库。
+PackFrame 整合包索引仓库。
 
 ## 目录
 
 ```text
-index.json          整合包索引
+packs/<id>.json     每个整合包一个文件
+index.json          GitHub Actions 自动生成，供 App 读取
+scripts/build-index.py
+.github/workflows/build-index.yml
 ```
 
-每个整合包的数据、模组和配置都在各自独立的仓库中。
+## 提交新整合包
 
-## index.json
+1. 在 `packs/` 下新增 `<id>.json`
+2. 提交 Pull Request
+3. 合并到 `main` 后，GitHub Action 自动重建 `index.json`
+4. App 刷新整合包列表即可看到
+
+每个文件只放一个整合包，多个 PR 同时提交不同文件时不会冲突。
+
+## pack 文件格式
 
 ```json
 {
-  "schemaVersion": 2,
-  "packs": [
-    {
-      "id": "baseuiandbeauty",
-      "name": "BaseUIandBeauty",
-      "summary": "整合包简介",
-      "repo": "ZXUW/BaseUIandBeauty-RimworldPack",
-      "ref": "main",
-      "manifest": "pack.json",
-      "file": "https://raw.githubusercontent.com/ZXUW/BaseUIandBeauty-RimworldPack/main/pack.json",
-      "modCount": 83
-    }
-  ]
+  "id": "baseuiandbeauty",
+  "name": "UI+美化 [1.7]",
+  "summary": "UI+美化 [1.7] 整合包",
+  "repo": "ZXUW/BaseUIandBeauty-RimworldPack",
+  "ref": "main",
+  "manifest": "pack.json",
+  "file": "https://raw.githubusercontent.com/ZXUW/BaseUIandBeauty-RimworldPack/main/pack.json",
+  "modCount": 83
 }
 ```
 
-- `repo`、`ref`、`manifest` 用于后续按整合包仓库加载。
-- `file` 是当前加载器直接读取的 `pack.json` 地址。
+- `repo`、`ref`、`manifest` 用于下载整合包仓库。
+- `file` 是 App 直接读取的 `pack.json` 地址。
 - `modCount` 只用于列表显示。
 
 ## 客户端地址
 
 ```text
 https://raw.githubusercontent.com/ZXUW/PackFrame-Modpacks/main/index.json
-```
-
-## 整合包仓库结构
-
-```text
-BaseUIandBeauty-RimworldPack/
-  pack.json
-  config/ModsConfig.xml
-  config/Mod_*.xml
-  mods/BaseUIandBeautyTweak/
-  images/
 ```
