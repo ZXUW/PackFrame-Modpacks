@@ -10,6 +10,16 @@
       "manifest": "pack.json",
       "file": "https://raw.githubusercontent.com/ZXUW/BaseUIandBeauty-RimworldPack/main/pack.json",
       "modCount": 83
+    },
+    {
+      "id": "ui-1-7",
+      "name": "UI+美化 [1.7]",
+      "summary": "UI+美化 [1.7]",
+      "repo": "ZXUW/UI-1.7-Rimworld-PackFrame",
+      "ref": "main",
+      "manifest": "pack.json",
+      "file": "https://raw.githubusercontent.com/ZXUW/UI-1.7-Rimworld-PackFrame/main/pack.json",
+      "modCount": 83
     }
   ]
 }
