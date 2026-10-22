@@ -1,11 +1,11 @@
 {
   "id": "1-7",
   "name": "多种族 [1.7]",
-  "summary": "多种族 [1.7] \r\n100次随机人物生成加10次一万点袭击生成\r\n无一条红字\r\n14个左右的HAR种族，一些零散美化",
+  "summary": "多种族 [1.7]\r\n100次随机人物生成加10次一万点袭击生成\r\n无一条红字\r\n14个左右的HAR种族，一些零散美化\r\n\r\n合集为整合包框架自动上传\r\n使用[url=https://github.com/ZXUW/Rimworld-PackFrame]Rimworld PackFrame[/url]来一键安装排序和平衡补丁\r\n交流QQ群 960717872",
   "repo": "ZXUW/1.7-Rimworld-PackFrame",
   "ref": "main",
   "manifest": "pack.json",
-  "file": "https://raw.githubusercontent.com/ZXUW/1.7-Rimworld-PackFrame/main/pack.json",
   "modCount": 220,
+  "file": "https://raw.githubusercontent.com/ZXUW/1.7-Rimworld-PackFrame/main/pack.json",
   "giteeFile": "https://gitee.com/zxuw/1.7-Rimworld-PackFrame/raw/main/pack.json"
 }
