@@ -44,3 +44,7 @@ scripts/build-index.py
 ```text
 https://raw.githubusercontent.com/ZXUW/PackFrame-Modpacks/main/index.json
 ```
+## License
+
+- Index scripts: [MIT](LICENSE)
+- `index.json`, `packs/` and repository documentation: [CC BY 4.0](LICENSE-DATA)
