@@ -101,6 +101,8 @@ def rewrite_pack(repo_dir: pathlib.Path, name: str):
 
 
 def mirror_pack(entry: dict, work: pathlib.Path):
+    if not entry.get("file"):
+        return
     repo = str(entry.get("repo") or "").strip()
     if "/" not in repo:
         raise SystemExit(f"invalid pack repo: {repo!r}")
@@ -123,12 +125,16 @@ def mirror_index(work: pathlib.Path):
         ref = entry.get("ref") or "main"
         manifest = entry.get("manifest") or "pack.json"
         entry["giteeFile"] = f"https://gitee.com/{GITEE_OWNER}/{name}/raw/{ref}/{manifest}"
-        entry["file"] = f"https://raw.githubusercontent.com/{repo}/{ref}/{manifest}"
+        if entry.get("file"):
+            entry["file"] = f"https://raw.githubusercontent.com/{repo}/{ref}/{manifest}"
         pack_path = target / "packs" / (str(entry.get("id", "")) + ".json")
         if pack_path.exists():
             pack = json.loads(pack_path.read_text(encoding="utf-8-sig"))
             pack["giteeFile"] = entry["giteeFile"]
-            pack["file"] = entry["file"]
+            if entry.get("file"):
+                pack["file"] = entry["file"]
+            else:
+                pack.pop("file", None)
             pack_path.write_text(
                 json.dumps(pack, ensure_ascii=False, indent=2) + "\n",
                 encoding="utf-8",
