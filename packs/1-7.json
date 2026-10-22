@@ -6,5 +6,6 @@
   "ref": "main",
   "manifest": "pack.json",
   "file": "https://raw.githubusercontent.com/ZXUW/1.7-Rimworld-PackFrame/main/pack.json",
-  "modCount": 220
+  "modCount": 220,
+  "giteeFile": "https://gitee.com/zxuw/1.7-Rimworld-PackFrame/raw/main/pack.json"
 }
