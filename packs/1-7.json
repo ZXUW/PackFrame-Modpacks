@@ -1,0 +1,10 @@
+{
+  "id": "1-7",
+  "name": "多种族 [1.7]",
+  "summary": "多种族 [1.7] \r\n100次随机人物生成加10次一万点袭击生成\r\n无一条红字\r\n14个左右的HAR种族，一些零散美化",
+  "repo": "ZXUW/1.7-Rimworld-PackFrame",
+  "ref": "main",
+  "manifest": "pack.json",
+  "file": "https://raw.githubusercontent.com/ZXUW/1.7-Rimworld-PackFrame/main/pack.json",
+  "modCount": 220
+}
