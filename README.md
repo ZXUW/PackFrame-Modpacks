@@ -48,9 +48,9 @@ https://raw.githubusercontent.com/ZXUW/PackFrame-Modpacks/main/index.json
 
 - Index scripts: [MIT](LICENSE)
 - `index.json`, `packs/` and repository documentation: [CC BY 4.0](LICENSE-DATA)
-## Gitee mirror
+## Gitee index
 
-PackFrame reads the Gitee mirror first and falls back to GitHub. Each pack entry may provide both addresses:
+PackFrame submits an index pull request to both GitHub and Gitee. Each entry carries both addresses:
 
 ```json
 {
@@ -59,4 +59,4 @@ PackFrame reads the Gitee mirror first and falls back to GitHub. Each pack entry
 }
 ```
 
-`file` is the GitHub copy and `giteeFile` is the Gitee copy. At least one is required; when both exist, the client prefers `giteeFile`. `scripts/mirror-gitee.py` keeps the Gitee index and pack repositories in sync.
+`file` is the GitHub pack link and `giteeFile` is the Gitee pack link. At least one is required; the Gitee client uses `giteeFile` first.
